@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Blague de fermeture instantanée</title>
+  <script>
+    window.onload = function() {
+      // Tente de fermer la fenêtre
+      window.open('', '_self'); // Nécessaire dans certains navigateurs
+      window.close();
+    };
+  </script>
+</head>
+<body>
+  <p>Si tu lis ce message, cela signifie que le navigateur a bloqué la fermeture automatique.</p>
+</body>
+</html>
